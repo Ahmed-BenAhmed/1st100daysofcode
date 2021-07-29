@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box ;
+}
+
+body {
+    width: 100vw;
+}
+.parent {
+    width: 100%;
+    display: flex;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.d-flex {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+/* Left side */
+.log-in {
+    width: 50%;
+}
+.sign-in {
+    font-weight: 300;
+    color: #888;
+}
+.icons > a {
+    margin: auto 10px;
+}
+
+.form-container {
+    margin: 100px 80px;
+}
+form {
+    width: 80%;
+    margin: 30px 10%;
+}
+.group-input {
+    margin-bottom: 15px;
+}
+.group-input  label {
+    font-weight: 600;
+}
+.group-input .form-item {
+    width: 100%;
+    border: none;
+    background-color: rgb(230, 228, 228);
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin: 15px 10px;
+    font-size: 18px;
+}
+.submit-btn {
+    width: 80%;
+    margin: auto 10%;
+    border: 2px solid #334257;
+    background: linear-gradient(135deg,#334257,#476072);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+}
+.submit-btn:hover {
+    border: 2px solid #334257;
+    background: transparent;
+    color: #334257;
+    transition: linear .2s;
+}
+.form-footer {
+    margin-top: 25px;
+    font-size: 18px;
+}
+.form-footer label {
+    color: #334257
+}
+.form-footer a{
+    float: right;
+    text-decoration: none;
+    color: #888
+}
+/* Right Side*/
+.welcome {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    background: linear-gradient(135deg,#334257,#476072);
+    color: #fff;
+}
+.welcome > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.welcome div * {
+    margin: 20px auto;
+}
+.welcome h2 {
+    font-size: 28px;
+    margin: 20px auto;
+}
+.welcome p {
+    text-align: center;
+}
+
+.my-btn {
+    background-color: #334257;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 7px 20px;
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+.my-btn:hover {
+    background-color: #fff;
+    color: #334257;
+}

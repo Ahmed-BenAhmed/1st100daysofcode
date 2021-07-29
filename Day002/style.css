@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box ;
+}
+
+body {
+    width: 100vw;
+}
+
+.parent {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.d-flex {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+
+/* Hero Image Styling */
+
+.hero-image {
+    width: 50%;
+}
+.hero-image img {
+    width: 80%;
+    margin: 10px 10%;
+}
+.hero-image a {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: #27dec0;
+}
+/* Register Styling */
+
+.register {
+    width: 50%;
+    position: relative;
+    text-align: center;
+}
+
+.centrize {
+    width: 80%;
+    height: 80vh;
+    margin: 10vh 10%;
+}
+
+.register h2 {
+    font-size: 28px;
+}
+.register p {
+    margin: 15px auto 40px;
+}
+
+form .input-group {
+    width: 80%;
+    border-bottom: 2px solid rgba(136, 136, 136, 0.39);
+    margin: 30px auto
+}
+
+form .input-group input {
+    width: 80%;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+}
+
+.sign-up-btn {
+    background-color: #27dec0;
+    border: 2px solid #27dec0;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 10px 25px;
+}
+.sign-up-btn:hover {
+    background-color: transparent;
+    color: #27dec0;
+    cursor: pointer;
+}
+.have-an-account {
+    padding-top: 10px;
+}
+.login-link {
+    color: #27dec0;
+}

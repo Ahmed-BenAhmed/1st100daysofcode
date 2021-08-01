@@ -6,4 +6,4 @@ it takes me about 2 houres
 
 this exercice is taken from the website : [ElzeroWebSchool](https://elzero.org/)
 
-this is result: ![The fifth project : Bitcoin Dashboard](./assetes/result.png)
+this is result: ![The fifth project : Bitcoin Dashboard](./assets/result.png)

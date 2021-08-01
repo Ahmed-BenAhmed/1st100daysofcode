@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --main-color: hsl(223deg 88% 41%);
+    --main-color-hover: hsl(223deg 88% 51%);
+    --background-color: hsl(225deg 89% 96%);
+    --text-color: rgb(120, 146, 180);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box ;
+}
+
+
+body {
+    font-size: 14px;
+}
+.parent {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.d-flex {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+
+/* Start Nav Bar */
+.sidebar {
+    width: 50px;
+    background-color: var(--main-color);
+    height: 100vh;
+}
+.sidebar a {
+    color: #fff;
+}
+.sidebar .nav-items {
+    width: fit-content;
+    margin: 100px auto;
+    text-align: center;
+}
+.sidebar .nav-items .nav-item {
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+.sidebar .nav-items .nav-item:hover,
+.sidebar .nav-items .nav-item.active {
+    background-color: var(--main-color-hover);
+    transition: ease-in .2s;
+}
+.sidebar .nav-items .nav-item i {
+    font-size: 16px;
+}
+/* main page */
+.page {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    margin: 30px auto 5px;
+}
+.logo {
+    color: var(--main-color);
+}
+.account .account-sold {
+    align-items: center;
+}
+.account .account-sold > div {
+    height: fit-content;
+    padding: 7px 15px;
+    color: #bbb;
+}
+.account .account-sold > div.active {
+    background-color: var(--background-color);
+    color: var(--main-color);
+}
+.account .account-sold .bitcoin {
+    border-radius: 20px 0 0 20px;
+}
+.account .account-sold .usd {
+    border-radius: 0 20px 20px 0;
+}
+.account .account-user {
+    align-items: center;
+}
+.account .account-user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+.account .account-user span,
+.account .account-user i {
+    color: #bbb;
+}
+.account .account-user i:hover {
+    color: var(--main-color-hover);
+    cursor: pointer;
+}
+.account .account-user span {
+    font-weight: 600;
+    margin: auto 10px;
+}
+/* Welcom */
+
+.welcom-back {
+    font-weight: 600;
+    color: var(--main-color);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.welcom-back span {
+    color: #bbb;
+}
+/* Exchange */
+
+.exchange {
+    width: 50%;
+    margin: auto 30px;
+}
+.exchange-types > .exchange-type {
+    margin: auto 20px;
+    width: 50%;
+}
+.exchange-types .exchange-type a {
+    width: 100%;
+    color: var(--main-color);
+}
+.exchange-types .exchange-type a.active {
+    background-color: var(--main-color);
+    color: #eee;
+}
+.exchange .options .option {
+    padding: 10px 0;
+    margin: 10px auto;
+}
+.exchange .options .option h4 {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 5px;
+}
+.exchange .options .option .d-flex > * {
+    all:unset;
+    padding: 10px 20px;
+    width: 50%;
+    background-color: var(--background-color);
+    text-align: left;
+    color: var(--text-color);
+
+}
+.exchange .options .option .drop-down i {
+    float: right;
+    font-size: 10px;
+    margin-top: 3px;
+}
+.options-footer .limit {
+    color: var(--text-color);
+}
+.exchange .exchange-btn {
+    margin-top: 15px;
+}
+.exchange .exchange-btn .btn {
+    background-color: hsl(151deg 86% 45%);
+    color: #fff;
+    width: 100%;
+}
+.exchange .note {
+    margin-top: 40px;
+    color: var(--text-color);
+}
+/* .exchange .options .option .drop-down {
+    background-color: #bbb;
+    width: 50%;
+    text-align: center;
+} */
+/* Transictions */
+.transictions {
+    width: 50%;
+}
+
+.transictions .buyer-seller .user-informations {
+    display: flex;
+}
+
+.transictions .buyer-seller .user-informations img {
+    width: 50px;
+}
+.transictions .buyer-seller .user-informations .user-details {
+    font-size: 13px;
+    margin: auto 10px;
+}
+.transictions .buyer-seller .seller {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.transictions .buyer-seller .user-informations .user-details span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.transictions .buyer-seller .user-informations .user-details .type {
+    font-size: 16px;
+    font-weight: 500;
+}
+.transictions .buyer-seller .user-informations .user-details .email {
+    color: var(--main-color);
+}
+/* transiction details */
+.transiction-details .detail {
+    background-color: var(--background-color);
+    margin: 10px auto;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    color: var(--text-color);
+}
+.transiction-details .detail.active {
+    color: var(--main-color);
+}
+.transiction-details .detail > div {
+    width: 50%;
+}

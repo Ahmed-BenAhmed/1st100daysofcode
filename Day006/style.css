@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', sans-serif;
+    box-sizing: border-box ;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.app {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.d-flex {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+
+
+/* card */
+
+.name {
+    position: absolute;
+    color: hsl(183, 100%, 15%);
+    width: 70px;
+    height: 70px;
+    overflow-wrap: break-word;
+    left: 50%;
+    margin-top: 70px;
+}
+
+.card {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%,50%);
+}
+
+.left {
+    width: 50%;
+}
+.right {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(183, 100%, 15%);
+    width: 50%;
+}
+
+.tip-values {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tip-value {
+    width: 30%;
+    margin: 10px 5px;
+    background-color: hsl(183, 100%, 15%);
+}
+.tip-value:hover {
+    background-color: hsl(172, 67%, 45%);
+}
+.tip-value:active {
+    background-color: hsl(172, 72%, 36%);
+}
+.tip-value-input {
+    width: 30%;
+    margin: 10px 5px;
+    padding: 10px 5px;
+    border: none;
+    background-color: #fff;
+}
+.form-item .input-holder input {
+    width: 80%;
+    padding: 10px 5px;
+    font-size: 18px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+.info .key p {
+    color: #fff;
+}
+.info .key span {
+    color:  hsl(184, 14%, 56%);
+}
+.info .value {
+    color: hsl(172, 67%, 45%);
+    font-size: 48px;
+}
+.info .value img {
+    width: 18px;
+}
+
+.reset-btn {
+    margin-top: 50px;
+    width: 100%;
+}
+.reset-btn button {
+    width: 100%;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+}
+.reset-btn button:hover {
+    background-color:  hsl(185, 41%, 84%);
+}
+
+.reset-btn button:active{
+    background-color: hsl(183, 100%, 15%);
+}
